@@ -1,8 +1,8 @@
 bitcoin:
   uri: http://proba.com
 
-zuul:
+ zuul:
   routes:
-    users:
-      path: /paypal/**
-      url: https://example.com/users_service
+   paypal-service:
+     path: /paypal/**
+     url: http://localhost:8077
