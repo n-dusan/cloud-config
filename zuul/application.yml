@@ -1,2 +1,15 @@
 bitcoin:
-  uri: https://my-new-bitcoin-uri.com
+  uri: http://proba.com
+
+nova:
+  varijabla: fdsafksajf
+
+paypal:
+  uri: uri
+
+zuul:
+  routes:
+    paypal-service:
+      path:
+      /paypal/**
+
