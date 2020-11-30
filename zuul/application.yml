@@ -1,7 +1,6 @@
 bitcoin:
   uri: http://proba.com
 
----
 zuul:
  routes:
    payment-gateway:
@@ -21,7 +20,7 @@ zuul:
    bitcoin-service:
      path: /bitcoin-service/**
      url: http://localhost:830
- # zuul:
+# zuul:
  #  routes:
  #   paypal-service:
  #     path: /paypal/**
