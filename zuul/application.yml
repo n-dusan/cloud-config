@@ -2,8 +2,27 @@ bitcoin:
   uri: http://proba.com
 
 ---
- zuul:
-  routes:
+zuul:
+ routes:
+   payment-gateway:
+     path: /payment-gateway/**
+   literary-society:
+     path: /literary-society/**
+     url: http://localhost:8090
+   bank:
+     path: /bank/**
+     url: http://localhost:8100
+   pcc:
+     path: /pcc/**
+     url: http://localhost:8101
    paypal-service:
-     path: /paypal/**
-     url: http://localhost:8077
+     path: /paypal-service/**
+     url: http://localhost:8200
+   bitcoin-service:
+     path: /bitcoin-service/**
+     url: http://localhost:830
+ # zuul:
+ #  routes:
+ #   paypal-service:
+ #     path: /paypal/**
+ #     url: http://localhost:8077
